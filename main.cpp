@@ -16,18 +16,21 @@ int main()
   try
   {
     cin>>number;
-    cout<<"You picked "<<number<<"."<<endl;
     
     if(cin.peek() != '\n')
     {
       throw &number;
     
     }
-    if(number > 10 || number < 1)
+    else if(number > 10 || number < 1)
     { 
-      cout<<"You entered an illegal value of -1."<<endl;
-      cout<<"Please try again. Pick a number between 1 and 10."<<endl;
+      cout<<"You picked "<<number<<"."<<endl;
     } 
+    else
+    {
+      cout<<"You entered and illegal value of "<<number<<". Please try again."<<endl;
+    }
+
   }
   
   catch(iostream::failure& iof)
