@@ -22,7 +22,7 @@ int main()
       throw &number;
     
     }
-    else if(number > 10 || number < 1)
+    else if(number > 0 && number < 11)
     { 
       cout<<"You picked "<<number<<"."<<endl;
     } 
@@ -49,7 +49,7 @@ int main()
   }
 
 
-  }while(number > 10 || number < 1);
+  }while(number > 0 && number < 11);
 
   
   return 0;
