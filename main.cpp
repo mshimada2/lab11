@@ -33,13 +33,6 @@ int main()
 
   }
   
-  catch(iostream::failure& iof)
-  {
-    cout<<"This is not an integer. Please enter a number."<<endl;
-    cin.clear(); //reset error flags 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //clear buffer
-  }
-
   catch(int *pnum)
   {
     cout<<"Non-integer value. You entered something after "<<*pnum<<"."<<endl;
@@ -47,6 +40,14 @@ int main()
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     *pnum = 0;
   }
+
+  catch(iostream::failure& iof)
+  {
+    cout<<"This is not an integer. Please enter a number."<<endl;
+    cint.clear();
+    cin.ignore(numeric_limits<streamsize.::max(), '\n');
+  }
+
 
 
   }while(number > 0 && number < 11);
