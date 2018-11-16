@@ -44,13 +44,13 @@ int main()
   catch(iostream::failure& iof)
   {
     cout<<"This is not an integer. Please enter a number."<<endl;
-    cint.clear();
-    cin.ignore(numeric_limits<streamsize.::max(), '\n');
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
   }
 
 
 
-  }while(number > 0 && number < 11);
+  }while(!(number > 0 && number < 11));
 
   
   return 0;
