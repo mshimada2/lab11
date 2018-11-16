@@ -28,7 +28,7 @@ int main()
     } 
     else
     {
-      cout<<"You entered and illegal value of "<<number<<". Please try again."<<endl;
+      cout<<"You entered an illegal value of "<<number<<". Please try again."<<endl;
     }
 
   }
